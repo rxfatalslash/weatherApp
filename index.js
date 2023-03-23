@@ -70,3 +70,13 @@ search.addEventListener('click', () => {
 
     })
 })
+
+var inputTexto = document.getElementById('texto');
+var boton = document.getElementById('boton');
+
+inputTexto.addEventListener("keypress", function(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        boton.click();
+    }
+})
